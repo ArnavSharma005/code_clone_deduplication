@@ -1,0 +1,22 @@
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# Dataset (derived from BigCloneBench; large, re-generate with scripts/01_prepare_data.py)
+data/
+
+# Model weights and generated artifacts (hundreds of MB; re-generate with scripts 02-04)
+models/
+*.onnx
+*.safetensors
+*.npy
+*.index
+
+# Per-project hook indexes
+.clone_index/
+
+# Local tooling / secrets
+.claude/settings.local.json
+.env
+*.log
